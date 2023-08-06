@@ -1,14 +1,16 @@
 import React from 'react';
+import NavContent from './NavContent';
 import './Explore.css';
 
 export default function Explore() {
+const navContent = ['home','search','explore','reels','message','notification','add','profile'];
+
   return (
     <div className="frame">
       <nav className="sidebar_container">
-        <span>side1</span>
-        <span>side2</span>
-        <span>side3</span>
-        <span>side4</span>
+        {navContent.map((content)=>(
+          <NavContent content={content} key={navContent.indexOf(content)}/>
+        ))}
       </nav>
       <section className="content_container">
         <span>content1</span>
