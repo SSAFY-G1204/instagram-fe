@@ -1,0 +1,212 @@
+.loginPageContainer {
+    position: relative;
+    overflow: scroll;
+    height: 100vh;
+}
+
+.contentsContainer {
+    position: absolute;
+    bottom: 135px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginLogoContainer {
+    padding: 40px 60px;
+}
+
+.imageContainer {
+    margin-right: 20px;
+}
+
+.loginImage {
+    width: 400px;
+    height: 600px;
+}
+
+.contentsSubContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.instagramContainer {
+    margin-top: 20px;
+    width: 350px;
+    height: 600px;
+}
+
+.instagramContainer1 {
+    border: 1px solid #E7E7E7;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 10px;
+}
+
+.loginLogoImage {
+    width: 174px;
+    height: 50px;
+}
+
+.emailInputContainer, .passwordInputContainer {
+    display: flex;
+}
+
+.emailInputBox, .passwordInputBox {
+    width: 100%;
+    background-color: #FAFAFA;
+    border: 1px solid #E7E7E7;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.loginLoginButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 32px;
+    border-radius: 8px;
+    margin: 10px 0;
+    background-color: #4CB5F9;
+}
+
+.loginLoginText {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.orContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.leftLine {
+    height: 1px;
+    width: 100px;
+    background-color: #DBDBDB;
+}
+
+.orText {
+    color: #737373;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.rightLine {
+    height: 1px;
+    width: 100px;
+    background-color: #DBDBDB;
+}
+
+.loginFacebookLoginContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.loginFacebookLoginIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+}
+
+.loginFackbookLoginText {
+    color: #385185;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.forgetPasswordContainer {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.forgetPasswordPasswordText {
+    font-size: 12px;
+    font-weight: 400;
+    color: #00376B;
+}
+
+.instagramContainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E7E7E7;
+    padding: 20px 60px;
+    margin-bottom: 15px;
+}
+
+.noAccountText {
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.loginJoinText {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 149, 246);
+}
+
+.instagramContainer3 {
+    text-align: center;
+}
+
+.downloadAppText {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.downloadContainer {
+    margin-top: 20px;
+}
+
+.downloadGooglePlayIcon {
+    width: 134px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.getMicrosoftIcon {
+    width: 111px;
+    height: 40px;
+}
+
+.footerContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 135px;
+}
+
+.footerSubContainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footerContents {
+    margin: 0 10px;
+    color: rgb(115, 115, 115);
+    font-size: 12px;
+    font-weight: 400;
+}
