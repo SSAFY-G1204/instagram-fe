@@ -1,0 +1,7 @@
+.nav_profile{
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid black;
+  height: 15px;
+  width: 15px;
+}

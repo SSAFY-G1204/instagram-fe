@@ -1,16 +1,33 @@
 .frame{
   display:flex;
   justify-content:flex-start;
+  height: 100%;
 }
 
 .sidebar_container{
   display:flex;
   flex-direction:column;
-  padding:100px;
+  padding:0;
+  margin:0px;
+  width: 20%;
+  border-right: solid 1px rgb(172, 170, 170);
 }
 
 .content_container{
   display:flex;
   flex-direction:column;
   padding:50px;
+  width:80%;
 } 
+
+.nav_logo_container{
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+}
+
+.nav_logo{
+  width:128px;
+  height:50px;
+  padding:10px;
+}
