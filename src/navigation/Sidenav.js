@@ -8,6 +8,7 @@ import ChatIcon from "@mui/icons-material/Chat";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import MenuIcon from "@mui/icons-material/Menu";
+import Avatar from '@mui/material/Avatar';
 
 function Sidenav() {
   return (
@@ -47,7 +48,7 @@ function Sidenav() {
           <span>만들기</span>
         </button>
         <button className="sidenav__button">
-          <AddCircleOutlineIcon />
+          <Avatar sx={{ width: 24, height: 24 }} />
           <span>프로필</span>
         </button>
       </div>
