@@ -1,5 +1,4 @@
 import React, { useState,useRef,useEffect } from 'react'
-import { IconContext } from 'react-icons';
 import {GrHomeRounded} from 'react-icons/gr';
 import {BsSearch} from 'react-icons/bs';
 import {MdOutlineExplore} from 'react-icons/md';
