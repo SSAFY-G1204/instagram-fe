@@ -1,1 +1,39 @@
-/*reels css*/
+.reels {
+  display: flex;
+  flex-direction: row; /* Horizontal alignment */
+  padding: 20px;
+  margin-left: 250px; /* Making space for SideBar */
+}
+
+.reel-item {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: calc(100% - 250px); /* Adjusting the width to make space for SideBar */
+  margin-left: 300px;
+}
+.reel-item video {
+  width: 400px;
+  height: 100%;
+}
+
+.reel-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.reel-info button {
+  background-color: #3897f0;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.reel-info span {
+  font-size: 14px;
+}

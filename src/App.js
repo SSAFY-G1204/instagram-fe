@@ -1,10 +1,9 @@
 import './App.css';
-import SideBar from './components/Reels/SideBar/SideBar';
-
+import Reels from './components/Reels/reels';
 function App() {
   return (
     <div className="App">
-      <SideBar />
+      <Reels />
     </div>
   );
 }
