@@ -1,0 +1,181 @@
+.joinPageContainer {
+    position: relative;
+    overflow: scroll;
+    height: 100vh;
+}
+
+.contentsContainer {
+    position: absolute;
+    bottom: 135px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer {
+    margin-top: 40px;
+    padding: 10px 20px;
+}
+
+.contentsSubContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.instagramContainer {
+    margin-top: 20px;
+    width: 350px;
+    height: 600px;
+}
+
+.instagramContainer1 {
+    border: 1px solid #E7E7E7;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.logoImage {
+    width: 174px;
+    height: 50px;
+}
+
+.descriptionContainer {
+    margin-bottom: 20px;
+}
+
+.descriptionText {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(115, 115, 115);
+}
+
+.facebookLoginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 32px;
+    border-radius: 8px;
+    margin: 10px 0;
+    background-color: #1877F2;
+}
+
+.facebookLoginIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+}
+
+.fackbookLoginText {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.orContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.leftLine {
+    height: 1px;
+    width: 100px;
+    background-color: #DBDBDB;
+}
+
+.orText {
+    color: #737373;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.rightLine {
+    height: 1px;
+    width: 100px;
+    background-color: #DBDBDB;
+}
+
+.phoneOrEmailInputContainer, .nameInputContainer, .userNameInputContainer, .passwordInputContainer {
+    display: flex;
+}
+
+.phoneOrEmailInputBox, .nameInputBox, .userNameInputBox, .passwordInputBox {
+    width: 100%;
+    background-color: #FAFAFA;
+    border: 1px solid #E7E7E7;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.noticeContainer {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.noticeText {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(115, 115, 115);
+    margin-right: 5px;
+}
+
+.moreText {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(0, 55, 107);
+    text-decoration: none;
+}
+
+.joinButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 32px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: #4CB5F9;
+}
+
+.joinText {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footerContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 135px;
+}
+
+.footerSubContainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footerContents {
+    margin: 0 10px;
+    color: rgb(115, 115, 115);
+    font-size: 12px;
+    font-weight: 400;
+}
