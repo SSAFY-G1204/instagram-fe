@@ -1,0 +1,53 @@
+.sideBarContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 240px;
+    height: 100vh;
+    padding: 24px 12px;
+    border-right: 1px solid lightgray;
+}
+
+.logoTabContainer {
+    display: flex;
+    margin-bottom: 15px;
+    height: 36px;
+    padding: 12px 12px;
+    cursor: pointer;
+}
+
+.logoImage {
+    width: 103px;
+    height: 30px;
+}
+
+.homeTabContainer, .searchTabContainer, .questTabContainer, .reelsTabContainer, .messageTabContainer,
+.alertTabContainer, .makeTabContainer, .profileTabContainer, .showMoreContainer {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding: 12px 12px;
+}
+
+.homeTabContainer:hover, .searchTabContainer:hover, .questTabContainer:hover, .reelsTabContainer:hover, .messageTabContainer:hover, .alertTabContainer:hover, .makeTabContainer:hover, .profileTabContainer:hover, .showMoreContainer:hover {
+    background-color: #F2F2F2;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.homeIcon, .searchIcon, .questIcon, .reelsIcon, .messageIcon, .alertIcon, .makeIcon, .profileIcon,
+.showMoreIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.homeText, .searchText, .questText, .reelsText, .messageText, .alertText, .makeText, .profileText, 
+.showMoreText {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.questText, .reelsText, .messageText {
+    margin-left: 16px;
+}

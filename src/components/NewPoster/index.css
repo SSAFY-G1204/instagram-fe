@@ -1,0 +1,493 @@
+.newPosterContainer {
+    height: 100vh;
+    position: relative;
+    background-color: rgb(89, 89, 89);
+}
+
+.newPosterTopContainer {
+    height: 60px;
+    position: relative;
+    z-index: 100;
+}
+
+.closeIcon {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.newPosterMainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+}
+
+.newPosterMain1Container {
+    width: 504px;
+    height: 560px;
+    padding: 5px 0;
+    background-color: white;
+    border-radius: 15px;
+    z-index: 50;
+}
+
+.newPosterMain1TopContainer {
+    border-bottom: 1px solid lightgray;
+}
+
+.newPosterMakeText {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.newPosterMain1ContentsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.newPosterMainContents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galleryIcon {
+    width: 96px;
+    height: 77px;
+}
+
+.getPictureMovieText {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.inputImageButton {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(0, 149, 246);
+    cursor: pointer;
+}
+
+.inputImageButton:hover {
+    background-color: #1877F2;
+}
+
+.newPosterMain2Container {
+    /* width: 504px; */
+    height: 560px;
+    padding: 5px 0;
+    background-color: white;
+    border-radius: 15px;
+    z-index: 100;
+}
+
+.newPosterMain2TopContainer {
+    padding: 8px 16px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftArrowIcon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.cutText {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.nextText {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 149, 246);
+    cursor: pointer;
+}
+
+.nextText:hover {
+    /* color: #1877F2; */
+    color: rgb(0, 55, 107);
+    font-weight: 600;
+}
+
+.newPosterMain2ContentsContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftSideContainer {
+    position: relative;
+    width: 504px;
+    height: 525px;
+    overflow: hidden;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+.rightSideContainer {
+    min-width: 320px;
+    max-width: 350px;
+    height: 525px;
+    overflow: scroll;
+}
+
+.editGbn {
+    display: flex;
+    width: 100%;
+}
+
+.editGbnValue {
+    font-size: 14px;
+    font-weight: 600;
+    color: #B2C3D2;
+    flex-grow: 1;
+    padding: 14px 0;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+
+.editGbnValue:hover {
+    cursor: pointer;
+}
+
+.editGbnValue.active {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 55, 107);
+    flex-grow: 1;
+    padding: 14px 0;
+    border-bottom: 1px solid black;
+}
+
+.editContentsFilter {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    padding: 15px;
+}
+
+.editContentsFilterContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.editContentsFilterImage {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.editContentsFilterText {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(115, 115, 115);
+}
+
+.newPosterContents {
+    padding: 14px 16px;
+    border-bottom: 1px solid lightgray;
+}
+
+.newPosterContentsProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profileIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.profileText {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.newPosterContentsPhrase {
+    height: 168px;
+    margin-bottom: 10px;
+}
+
+.contentsPhrase {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.newPosterContentsEtc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.smileIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.wordCount {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(199, 199, 199);
+}
+
+.newPosterImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.ratioIconContainer, .enlargementContainer, .changeOrderContainer {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(66, 66, 67);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ratioIconContainer {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.enlargementContainer {
+    position: absolute;
+    bottom: 15px;
+    left: 62px;
+}
+
+.changeOrderContainer {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.newPosterAddLocation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    border-bottom: 1px solid lightgray;
+}
+
+.inputAddLocation {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.locationIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.newPosterAccess, .newPosterAdvanced {
+    padding: 14px 16px;
+    border-bottom: 1px solid lightgray;
+}
+
+.accessContainer, .advancedContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hideLikeAndViewsContainer, .unlockCommentsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hideLikeAndViewsContainer {
+    margin-top: 15px;
+}
+
+.hideLikeAndViewText, .unlockCommentsText {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hideLikeAndViewToggleButtton, .unlockCommentsToggleButtton {
+    width: 50px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.hideLikeAndViewDescriptionText, .unlockCommentsDescriptionText {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(115, 115, 115);
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.accessText {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.accessTextActive {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.replaceText {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(115, 115, 115);
+    text-align: left;
+}
+
+.replaceImageContainer {
+    display: flex;
+    align-items: center;
+}
+
+.replaceImage {
+    width: 43px;
+    height: 43px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.replaceImageTextContainer {
+    padding: 4px 12px;   
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.replaceImageText {
+    border: none;
+    outline: none;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.newPosterBottomContainer {
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.toggleButtonContainer {
+    position: relative;
+    margin-top: 8rem;
+    left: 47%;
+    cursor: pointer;
+}
+
+.toggleContainer {
+    width: 50px;
+    height: 24px;
+    border-radius: 30px;
+    background-color: rgb(233, 233, 234);
+}
+
+.toggleContainer.toggleChecked1 {
+    background-color: rgb(0, 200, 102);
+    transition: 0.5s;
+}
+
+.toggleCircle {
+    position: absolute;
+    top: 1;
+    left: 1;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: rgb(255, 254, 255);
+    transition: 0.5s;
+}
+
+.toggleCircle.toggleChecked2 {
+    left: 27px;
+    transition: 0.5s;
+}
+
+.backgroundContainer {
+    background-color: rgba(89, 89, 89, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.customModal {
+    background-color: " rgba(0, 0, 0, 0.4)";
+    width: "100%";
+    height: "100vh";
+    z-index: 9999;
+    position: "fixed";
+    top: 0;
+    left: 0
+}
+
+.innerModal {
+    width: 360px;
+    height: 180px;
+    z-index: 9998;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    justify-content: center;
+    overflow: auto;
+}
