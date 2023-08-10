@@ -1,12 +1,11 @@
 .homepage{
-    display: flex;
     flex-direction: row;
 }
 
 .homepage__nav{
-    flex: 0.2;
+    flex: 0.4;
 }
 
-.gomepage__profile{
-    flex: 0.8;
+.homepage__profile{
+    flex: 0.6;
 }
