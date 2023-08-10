@@ -1,0 +1,70 @@
+.sidebar {
+    top:0;
+    left:0;
+    bottom :0;
+    position : fixed;
+    width: 180px;
+    flex-direction: column;
+    border: 1px solid rgb(205, 204, 204);
+    z-index: 100;
+    background: white;
+}
+
+.sidebar_icon{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.side__logo img{
+    width: 95px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.side__home,
+.side__search,
+.side__compass,
+.side__reels,
+.side__compass,
+.side__message,
+.side__notification,
+.side__plus,
+.side__profile,
+.side_menu
+{
+    display: flex;
+    align-items: center;
+    border: none;
+    padding :13px 0;
+    background: none;
+}
+.side__home img{
+    width:20px;
+    padding-right: 10px;
+    
+}
+.side__home{
+    font-weight: bold;
+}
+
+
+.side__compass img {
+    transform: rotate(180deg);
+}
+.side__search img,
+.side__reels img,
+.side__message img,
+.side__compass img,
+.side__plus img,
+.side__profile img,
+.side_menu img{
+    width: 17px;
+    margin-right: 15px;
+}
+
+.side__profile img{
+    border-radius: 50%;
+}
+
+.side__menu{
+    margin-top: 150px;
+}

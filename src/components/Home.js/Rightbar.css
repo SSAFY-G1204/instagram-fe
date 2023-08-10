@@ -1,0 +1,90 @@
+.rightBar {
+    position: absolute;
+    top: 40px;
+    left :940px;
+    width: 270px;
+}
+
+
+
+.right-user-profile {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+}
+
+.right-user-profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0 15px 0 0 ;
+}
+
+.right-user-info {
+    display: flex;
+    flex-direction: column;
+    flex : 1;
+
+}
+
+.right-user-info a{
+    text-decoration: none;
+}
+.right-user-button{
+    border:none;
+    font-weight: 600;
+    color : rgb(54, 54, 187);
+    background-color: white;
+    padding-right: 0;
+}
+
+.right-recommand{
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight:bolder;
+}
+.right-recommand a {
+    text-decoration: none;
+    color : black;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.suggestion {
+margin-bottom: 8px;
+}
+
+.suggestion__avatar{
+display: flex;
+align-items: center;
+}
+.suggestion__avatar img{
+    width: 30px;
+    border-radius: 50%;
+}
+.suggestion__info {
+    padding: 0 8px ;
+    font-size: 12px;
+    flex : 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestion__info a {
+    text-decoration: none;
+    font-weight: 550;
+    color : black;
+    font-size: 11px;
+}
+.suggestion__info span {
+    font-size: 11px;
+    color: rgb(121, 120, 120)
+} 
+.followtogglebtn{
+    background-color: white;
+    border: none;
+    font-size: 12px;
+    padding-right: 0;
+}

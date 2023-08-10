@@ -1,0 +1,13 @@
+.comment__item{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.comment__item img{
+    width: 12px
+}
+.post__comment input {
+    border:none;
+    font-size: 12px;
+    padding-left: 0;
+}
