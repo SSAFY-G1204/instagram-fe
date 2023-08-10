@@ -33,7 +33,9 @@ export default function CommentSection() {
     <div className='commentsection'>
        {comments.map(comment => 
       <div className='comment__item' key={comment.id}>
-       {comment.text}
+        <div className='comment__item-text'>
+       <p>oo33</p> {comment.text}
+       </div>
       <LikeButton/>
       </div>
        )}

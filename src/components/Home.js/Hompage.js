@@ -12,7 +12,6 @@ export default function Hompage() {
         <div className = 'home_main'>       
         <Story/>
         <Post/>
-        <Post/>
         </div>
         <Rightbar></Rightbar>
   

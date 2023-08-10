@@ -29,11 +29,12 @@
 
 .right-user-info a{
     text-decoration: none;
+    color:black;
 }
 .right-user-button{
     border:none;
     font-weight: 600;
-    color : rgb(54, 54, 187);
+    color:#00bfff;
     background-color: white;
     padding-right: 0;
 }
@@ -51,7 +52,9 @@
     font-weight: bold;
     font-size: 10px;
 }
-
+.right-recommand a:hover{
+    color:gray;
+}
 .suggestion {
 margin-bottom: 8px;
 }
@@ -62,7 +65,9 @@ align-items: center;
 }
 .suggestion__avatar img{
     width: 30px;
+    height: 30px;
     border-radius: 50%;
+    object-fit: cover;
 }
 .suggestion__info {
     padding: 0 8px ;
@@ -78,6 +83,7 @@ align-items: center;
     color : black;
     font-size: 11px;
 }
+
 .suggestion__info span {
     font-size: 11px;
     color: rgb(121, 120, 120)
@@ -87,4 +93,9 @@ align-items: center;
     border: none;
     font-size: 12px;
     padding-right: 0;
+    color:#00bfff;
+    font-weight: bold;
+}
+.followtogglebtn:hover {
+    color : black;
 }

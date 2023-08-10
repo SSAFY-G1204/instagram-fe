@@ -34,8 +34,40 @@
     display: flex;
     align-items: center;
     border: none;
-    padding :13px 0;
+    margin :13px 0;
     background: none;
+    border-radius: 7px; 
+}
+
+.side__home:hover,
+.side__search:hover,
+.side__compass:hover,
+.side__reels:hover,
+.side__compass:hover,
+.side__message:hover,
+.side__notification:hover,
+.side__plus:hover,
+.side__profile:hover,
+.side_menu:hover{
+    background:rgb(221, 221, 221);;
+}
+
+.side__home{
+    padding : 10px 100px 10px 5px;
+}
+
+.side__search,
+.side__reels,
+.side__notification,
+.side_menu{
+    padding : 10px 85px 10px 5px;
+ 
+}
+.side__compass,
+.side__message,
+.side__plus,
+.side__profile{
+    padding : 10px 72px 10px 5px;
 }
 .side__home img{
     width:20px;
@@ -66,5 +98,5 @@
 }
 
 .side__menu{
-    margin-top: 150px;
+    margin-top: 270px;
 }
