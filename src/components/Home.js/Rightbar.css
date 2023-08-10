@@ -29,6 +29,7 @@
 
 .right-user-info a{
     text-decoration: none;
+    color:black;
 }
 .right-user-button{
     border:none;
@@ -62,7 +63,9 @@ align-items: center;
 }
 .suggestion__avatar img{
     width: 30px;
+    height: 30px;
     border-radius: 50%;
+    object-fit: cover;
 }
 .suggestion__info {
     padding: 0 8px ;

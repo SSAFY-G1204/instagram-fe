@@ -5,13 +5,12 @@ import Rightbar from './Rightbar'
 import Post from './Feed/Post'
 import './Homepage.css'
 
-export default function Hompage() {
+export default function Homepage() {
   return (
     <div>
         <Sidebar/>
         <div className = 'home_main'>       
         <Story/>
-        <Post/>
         <Post/>
         </div>
         <Rightbar></Rightbar>
