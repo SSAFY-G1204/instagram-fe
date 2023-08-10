@@ -1,0 +1,91 @@
+.reel-item {
+  margin-top: 50px;
+  position: relative;
+  height: 100%;
+}
+.reel-item video {
+  height: 100%;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.btn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(235, 237, 238);
+  border-radius: 50%;
+}
+.text {
+  margin-left: 2px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.reel-btn {
+  position: absolute;
+  top: 65%;
+  left: 63%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mute_btn {
+  position: absolute;
+  background-color: rgba(155, 154, 154, 0.87);
+  border-radius: 50%;
+  left: 60%;
+  top: 3%;
+}
+
+.reel-info {
+  position: absolute;
+  color: #fff;
+  bottom: 3%;
+  left: 39%;
+}
+.description button {
+  background-color: transparent;
+  color: rgb(31, 22, 22);
+  font-weight: bold;
+  font-size: 15px;
+}
+.fallow {
+  margin-left: 3px;
+}
+/* 전체화면 버튼 */
+video::-webkit-media-controls-fullscreen-button {
+  display: none !important;
+}
+
+/* 일시정지, 재생 버튼 */
+video::-webkit-media-controls-play-button {
+  display: none !important;
+}
+
+/* 재생 슬라이드..? */
+video::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+/* 현재 진행 시간 */
+video::-webkit-media-controls-current-time-display {
+  display: none !important;
+}
+
+/* 전체 시간 */
+video::-webkit-media-controls-time-remaining-display {
+  display: none !important;
+}
+
+/* 음소거 버튼 */
+video::-webkit-media-controls-mute-button {
+  display: none !important;
+}
+
+/* 볼륨 조절 슬라이드 */
+video::-webkit-media-controls-volume-slider {
+  display: none !important;
+}

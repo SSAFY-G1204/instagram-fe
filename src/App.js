@@ -3,6 +3,7 @@ import Hompage from './components/Home.js/Hompage';
 import Explore from './components/explore/Explore';
 import NewPoster from './components/NewPoster';
 import ProfileMain from "./Homepage";
+import Reels from './components/Reels/reels';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hompage></Hompage>
       <NewPoster/>
       <ProfileMain/>
+      <Reels />
     </div>
   );
 }
