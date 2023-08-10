@@ -1,0 +1,11 @@
+.homepage{
+    flex-direction: row;
+}
+
+.homepage__nav{
+    flex: 0.4;
+}
+
+.homepage__profile{
+    flex: 0.6;
+}
