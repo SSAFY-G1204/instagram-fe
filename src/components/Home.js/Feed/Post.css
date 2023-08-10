@@ -1,0 +1,170 @@
+
+.post{
+    margin-top: 20px;
+    margin-left: 430px;
+    width : 375px;
+}
+.post_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 5px 0;
+}
+.post_profile{
+    display: flex;
+    align-items: center;
+}
+
+.post__userName{
+    margin-left: 10px;
+    font-size: 11px;
+    text-decoration: none;
+    color : black;
+    font-weight: 500;
+}
+
+.post__avatar{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: radial-gradient(rgba(0, 0, 0, 0.15) 60%, transparent 0),
+      radial-gradient(white 65%, transparent 0),
+      linear-gradient(to top right, orange, deeppink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post__avatar img{
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+.post__dot {
+    font-size: 25px;
+    margin : 0 4px;
+    color : gray
+
+}
+
+.post__time{
+    font-size: 12px;
+    color : gray
+}
+.post__more-options {
+    border: none;
+    background: none;
+}
+.post__more-options img {
+    width: 15px;
+}
+
+.post__content img{
+    width: 100%;
+    height: 370px;
+}
+
+.post__buttons {
+    padding-top:3px;
+    display: flex;
+    justify-content: space-between;
+}
+.post__left_button{
+    display: flex;
+}
+.post__button, 
+.post__send_button,
+.post__bookmark_button{
+    border:none;
+    background: none;
+    padding-left: 3px;
+}
+.post__button img{
+    width :22px;
+  
+}
+
+.post__send_button img{
+width: 19px;
+}
+.post__right_button{
+    display: flex;
+}
+.post__bookmark_button img {
+    width: 20px;
+}
+.post__bookmark_button{
+    padding-right: 0;
+}
+.post__infos{
+    padding-top: 7px;
+}
+.post__likes, 
+.post__name{
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 4px;
+
+}
+.post__likes a,
+.post__name a {
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+}
+.post__likes a:first-child,
+.post__name a:first-child{
+    font-weight: 500;
+}
+.post__likes a:last-child{
+    font-weight: 700;
+}
+
+details summary {
+    list-style: none;
+    font-size: 11px;
+}
+
+details p {
+    margin: 0;
+    font-size: 11px;
+    color : rgba(3, 46, 218, 0.603)
+}
+.post__all_comments{
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    font-size: 11px;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: rgb(243, 241, 241) !important;
+    opacity: 1 ; 
+  }
+  
+.slick-prev{
+    left: 8px !important ;
+    z-index: 9 ;
+}
+.slick-next{
+    right: 8px !important ;
+    z-index: 9 ;  
+  }
+.slick-dots{
+    bottom : 10px !important;
+  }
+.slick-dots li {
+    width:2px
+}
+
+.slick-dots li.slick-active button:before{
+    color: rgb(255, 253, 253) !important; 
+     
+  }
+.slick-dots li button:before{
+    color: rgb(222, 222, 222) !important;  
+
+  }
+.division__line{
+    border:0.5px  solid rgb(191, 191, 191);
+    margin: 13px 0;
+}
