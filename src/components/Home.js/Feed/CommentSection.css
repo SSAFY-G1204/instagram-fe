@@ -2,14 +2,6 @@
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-    
-}
-.comment__item-text{
-    display: flex;
-}
-.comment__item-text p{
-    font-weight: bold;
-    padding-right: 7px;
 }
 .comment__item img{
     width: 12px

@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 import './Rightbar.css'
-import { Link } from 'react-router-dom'
 
 const suggestionsData = [
   {imgURL: 'https://pbs.twimg.com/media/EoeYdG1UYAEr8RB.jpg',userName : 'jjki', id:'1', following : true , relation : 'kko님 외 1명이 팔로우합니다'},
-  {imgURL: 'https://blog.kakaocdn.net/dn/tE1Hz/btrVLvbR3ox/mMeiTnukJ5rrJdWIe3OXck/img.jpg',userName : 'nmn577', id:'2',following : true, relation : 'hkhk님 외 3명이 팔로우합니다'},
-  {imgURL: 'https://dimg.donga.com/wps/NEWS/IMAGE/2022/01/28/111500268.2.jpg',userName : 'junj', id:'3',following : true, relation : 'mm님 외 5명이 팔로우합니다'},
-  {imgURL: 'https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2022/06/01/b0628b59-8739-4e99-b148-69559d1d6429.jpg',userName : 'jihyo_458', id:'4',following : true, relation : 'lll님이 팔로우합니다'},
-  {imgURL: 'https://www.fnnews.com/resource/media/image/2022/07/26/202207261651441499_l.jpg',userName : 'hyun__y', id:'5',following : true, relation : 'youu이 팔로우합니다'},
+  {imgURL: 'https://s.gae9.com/trend/fce2a623a8b2e316.orig',userName : 'nmn577', id:'2',following : true, relation : 'hkhk님 외 3명이 팔로우합니다'},
+  {imgURL: 'https://s.gae9.com/trend/fce2a623a8b2e316.orig',userName : 'junj', id:'3',following : true, relation : 'mm님 외 5명이 팔로우합니다'},
+  {imgURL: 'https://s.gae9.com/trend/fce2a623a8b2e316.orig',userName : 'jihyo_458', id:'4',following : true, relation : 'lll님이 팔로우합니다'},
+  {imgURL: 'https://s.gae9.com/trend/fce2a623a8b2e316.orig',userName : 'hyun__y', id:'5',following : true, relation : 'youu이 팔로우합니다'},
 ]
 
 
@@ -28,18 +27,12 @@ export default function Rightbar() {
   return (
     <div className='rightBar'>
         <div className='right-user-profile'>
-          <Link to = 'profile'>
           <img src="https://ilyo.co.kr/contents/article/images/2023/0222/1677033656333071.jpg" alt ='/'/>
-          </Link>
           <div className = 'right-user-info'>
-          <Link to = 'profile'>
             <a href ='/'target="_blank">oo33</a>
-            </Link>
-           <span>최지현</span>
+            <span>최지현</span>
           </div>
-          <Link to = 'login'>
           <button className='right-user-button'>전환</button>
-          </Link>
         </div>
         <div className='right-recommand'>
           <span>회원님을 위한 추천</span>

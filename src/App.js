@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes,Route } from 'react-router-dom';
-import Homepage from './components/Home.js/Homepage';
+import Hompage from './components/Home.js/Hompage';
 import Explore from './components/explore/Explore';
 import NewPoster from './components/NewPoster';
 import ProfileMain from "./Homepage";
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-          <Route path="/" element={<Homepage/>}/>
+          <Route path="/" element={<Hompage/>}/>
           <Route path="login" element={<LoginPage/>}/>
           <Route path="join" element={<JoinPage/>}/>
           <Route path="profile" element={<ProfileMain/>}/>

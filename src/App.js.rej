@@ -1,0 +1,18 @@
+diff a/src/App.js b/src/App.js	(rejected hunks)
+@@ -1,6 +1,6 @@
+ import './App.css';
+ import { Routes,Route } from 'react-router-dom';
+-import Hompage from './components/Home.js/Hompage';
++import Homepage from './components/Home.js/Homepage';
+ import Explore from './components/explore/Explore';
+ import NewPoster from './components/NewPoster';
+ import ProfileMain from "./Homepage";
+@@ -13,7 +13,7 @@
+   return (
+     <div className="App">
+       <Routes>
+-          <Route path="/" element={<Hompage/>}/>
++          <Route path="/" element={<Homepage/>}/>
+           <Route path="login" element={<LoginPage/>}/>
+           <Route path="join" element={<JoinPage/>}/>
+           <Route path="profile" element={<ProfileMain/>}/>
