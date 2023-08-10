@@ -1,5 +1,6 @@
 import React from 'react';
 import NavContent from './NavContent';
+import MainContent from './MainContent';
 import './Explore.css';
 
 export default function Explore() {
@@ -18,7 +19,7 @@ const navContent = ['홈','검색','탐색 탭','릴스','메세지','알림','�
         ))}
       </nav>
       <section className="content_container">
-        <p>main component</p>
+        <MainContent/>
       </section>
     </div>
   )
