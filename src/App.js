@@ -2,11 +2,11 @@ import './App.css';
 import { Routes,Route } from 'react-router-dom';
 import Hompage from './components/Home.js/Hompage';
 import Explore from './components/explore/Explore';
-import NewPoster from './components/NewPoster';
+import NewPoster from './components/login/NewPoster';
 import ProfileMain from "./Homepage";
 import Reels from './components/reels/reels';
-import LoginPage from './components/LoginPage/index.js';
-import JoinPage from './components/JoinPage/index.js';
+import LoginPage from './components/login/LoginPage/index';
+import JoinPage from './components/login/JoinPage/index';
 
 
 function App() {

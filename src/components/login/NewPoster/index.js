@@ -128,7 +128,7 @@ export default function NewPoster() {
                 <div className="newPosterMainContents">
                   <img
                     className="galleryIcon"
-                    src={require("../../images/ic_gallery.png")}
+                    src={require("../images/ic_gallery.png")}
                     alt="갤러리"
                   />
 
@@ -246,7 +246,7 @@ export default function NewPoster() {
                                     id={`${data.id}`}
                                     className="editContentsFilterImage"
                                     alt={`${data.name}`}
-                                    src={require("../../images/ic_filter.jpg")}
+                                    src={require("../images/ic_filter.jpg")}
                                   />
                                   <span className="editContentsFilterText">{`${data.name}`}</span>
                                 </div>
@@ -269,7 +269,7 @@ export default function NewPoster() {
                           <div className="newPosterContentsProfile">
                             <img
                               className="profileIcon"
-                              src={require("../../images/ic_profile.png")}
+                              src={require("../images/ic_profile.png")}
                               alt="프로필"
                             />
                             <span className="profileText">둔두두둔둔</span>

@@ -11,7 +11,7 @@ export default function LoginPage() {
           <div className="imageContainer">
             <img
               className="loginImage"
-              src={require("../../images/img_login_main.png")}
+              src={require("../images/img_login_main.png")}
               alt="로그인 페이지 이미지1"
             />
           </div>
@@ -22,7 +22,7 @@ export default function LoginPage() {
               <div className="loginLogoContainer">
                 <img
                   className="loginLogoImage"
-                  src={require("../../images/img_logo.png")}
+                  src={require("../images/img_logo.png")}
                   alt="로고 이미지"
                 />
               </div>
@@ -51,7 +51,7 @@ export default function LoginPage() {
               <div className="loginFacebookLoginContainer">
                 <img
                   className="loginFacebookLoginIcon"
-                  src={require("../../images/ic_facebook.png")}
+                  src={require("../images/ic_facebook.png")}
                   alt="페이스북 아이콘"
                 />
                 <a
@@ -84,14 +84,14 @@ export default function LoginPage() {
                 <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D204A3542-7571-452D-B0F8-9007A0785A7C%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge&pli=1" target="_blank">
                   <img
                     className="downloadGooglePlayIcon"
-                    src={require("../../images/ic_download_google_play.png")}
+                    src={require("../images/ic_download_google_play.png")}
                     alt="Google Play"
                   />
                 </a>
                 <a href="ms-windows-store://search/?query=Instagram">
                   <img
                     className="getMicrosoftIcon"
-                    src={require("../../images/ic_get_microsoft.png")}
+                    src={require("../images/ic_get_microsoft.png")}
                     alt="Microsoft"
                   />
                 </a>

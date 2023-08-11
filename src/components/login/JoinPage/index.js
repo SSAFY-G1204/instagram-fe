@@ -13,7 +13,7 @@ export default function JoinPage() {
               <div className="logoContainer">
                 <img
                   className="logoImage"
-                  src={require("../../images/img_logo.png")}
+                  src={require("../images/img_logo.png")}
                   alt="로고 이미지"
                 />
               </div>
@@ -23,7 +23,7 @@ export default function JoinPage() {
               <div className="facebookLoginContainer">
                 <img
                   className="facebookLoginIcon"
-                  src={require("../../images/ic_facebook.png")}
+                  src={require("../images/ic_facebook.png")}
                   alt="페이스북 아이콘"
                 />
                 <a
