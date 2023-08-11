@@ -1,10 +1,40 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useNavigate } from "react-router-dom";
 
 import './index.css';
 
 export default function JoinPage() {
   const navigate = useNavigate();
+  const [isPossibleJoin, setIsPossibleJoin] = useState(true);
+
+  const [joinPhoneNumAndEmailValue, setJoinPhoneNumAndEmailValue] = useState('');
+  const [joinNameValue, setJoinNameValue] = useState('');
+  const [joinIdValue, setJoinIdValue] = useState('');
+  const [joinPwValue, setJoinPwValue] = useState('');
+
+  const checkJoin = () => {
+    if(joinPhoneNumAndEmailValue !== '' && joinNameValue !== ''
+        && joinIdValue !== '' && joinPwValue !== '')
+      navigate('/login');
+    else
+      setIsPossibleJoin(false);
+  }
+
+  const saveJoinPhoneNumAndEmailValue = (e) => {
+    setJoinPhoneNumAndEmailValue(e.target.value);
+  }
+
+  const saveJoinNameValue = (e) => {
+    setJoinNameValue(e.target.value);
+  }
+
+  const saveJoinIdValue = (e) => {
+    setJoinIdValue(e.target.value);
+  }
+
+  const saveJoinPwValue = (e) => {
+    setJoinPwValue(e.target.value);
+  }
 
   return (
     <div className="joinPageContainer">
@@ -47,6 +77,7 @@ export default function JoinPage() {
                   className="phoneOrEmailInputBox"
                   type="text"
                   placeholder="휴대폰 번호 또는 이메일 주소"
+                  onChange={saveJoinPhoneNumAndEmailValue}
                 />
               </div>
               <div className="nameInputContainer">
@@ -54,6 +85,7 @@ export default function JoinPage() {
                   className="nameInputBox"
                   type="text"
                   placeholder="성명"
+                  onChange={saveJoinNameValue}
                 />
               </div>
               <div className="userNameInputContainer">
@@ -61,6 +93,7 @@ export default function JoinPage() {
                   className="userNameInputBox"
                   type="text"
                   placeholder="사용자 이름"
+                  onChange={saveJoinIdValue}
                 />
               </div>
               <div className="passwordInputContainer">
@@ -68,6 +101,7 @@ export default function JoinPage() {
                   className="passwordInputBox"
                   type="password"
                   placeholder="비밀번호"
+                  onChange={saveJoinPwValue}
                 />
               </div>
               <div className="noticeContainer">
@@ -76,7 +110,16 @@ export default function JoinPage() {
                 </span>
                 <a className='moreText' href='https://www.facebook.com/help/instagram/261704639352628'>더 알아보기</a>
               </div>
-              <div className="joinButtonContainer" onClick={() => navigate('/login')}>
+
+              {
+                !isPossibleJoin ? (
+                  <div className='isPossibleJoinAlertContainer'>
+                    <span className='isPossibleJoinAlertText'>모든 정보를 입력해 주세요.</span>
+                  </div>
+                ) : null
+              }
+
+              <div className="joinButtonContainer" onClick={() => checkJoin()}>
                 <span className="joinText">가입</span>
               </div>
             </div>

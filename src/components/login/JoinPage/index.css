@@ -136,6 +136,17 @@
     text-decoration: none;
 }
 
+.isPossibleJoinAlertContainer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.isPossibleJoinAlertText {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(237, 73, 86);
+}
+
 .joinButtonContainer {
     display: flex;
     align-items: center;

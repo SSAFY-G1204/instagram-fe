@@ -1,9 +1,30 @@
-import React from 'react';
-import { useNavigate } from "react-router-dom";
+import React, {useState} from 'react';
+import { UNSAFE_DataRouterStateContext, useNavigate } from "react-router-dom";
 import './index.css';
 
 export default function LoginPage() {
   const navigate = useNavigate();
+  const [isCorrectLogin, setIsCorrectLogin] = useState(true);
+  const [loginIdValue, setLoginIdValue] = useState('');
+  const [loginPwValue, setLoginPwValue] = useState('');
+
+  const testId = 'jdg';
+  const textPassword = 'jdg';
+
+  const checkLogin = () => {
+    if(loginIdValue === testId && loginPwValue === textPassword) 
+      navigate("/")
+    else
+      setIsCorrectLogin(false);
+  }
+
+  const saveLoginIdValue = (e) => {
+    setLoginIdValue(e.target.value);
+  }
+
+  const saveLoginPwValue = (e) => {
+    setLoginPwValue(e.target.value);
+  }
 
   return (
     <div className="loginPageContainer">
@@ -34,6 +55,7 @@ export default function LoginPage() {
                   className="emailInputBox"
                   type="text"
                   placeholder="전화번호, 사용자 이름 또는 이메일"
+                  onChange={saveLoginIdValue}
                 />
               </div>
               <div className="passwordInputContainer">
@@ -41,9 +63,10 @@ export default function LoginPage() {
                   className="passwordInputBox"
                   type="password"
                   placeholder="비밀번호"
+                  onChange={saveLoginPwValue}
                 />
               </div>
-              <div className="loginLoginButtonContainer" onClick={() => navigate("/")}>
+              <div className="loginLoginButtonContainer" onClick={() => checkLogin()}>
                 <span className="loginLoginText">로그인</span>
               </div>
               <div className="orContainer">
@@ -64,6 +87,13 @@ export default function LoginPage() {
                   Facebook으로 로그인
                 </a>
               </div>
+              {
+                !isCorrectLogin ? (
+                  <div className='wrongPasswordAlertContainer'>
+                    <span className='wrongPasswordAlertText'>잘못된 비밀번호입니다. 다시 확인하세요.</span>
+                  </div>
+                ) : null
+              }
               <div className="forgetPasswordContainer">
                 <span className="forgetPasswordPasswordText">
                   비밀번호를 잊으셨나요?
