@@ -1,7 +1,25 @@
+.finalContainer {
+    position: relative;
+    height: 100vh
+}
+
+.sideBarContainer {
+    z-index: 9997;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
 .newPosterContainer {
     height: 100vh;
-    position: relative;
-    background-color: rgb(89, 89, 89);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgb(89, 89, 89, 0.5);
+    z-index: 9999;
 }
 
 .newPosterTopContainer {
@@ -45,6 +63,7 @@
 
 .newPosterMain1TopContainer {
     border-bottom: 1px solid lightgray;
+    padding: 8px 16px;
 }
 
 .newPosterMakeText {
@@ -70,6 +89,7 @@
 .galleryIcon {
     width: 96px;
     height: 77px;
+    margin-bottom: 30px;
 }
 
 .getPictureMovieText {
@@ -146,6 +166,8 @@
     height: 525px;
     overflow: hidden;
     border-left: 1px solid lightgray;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     border-right: 1px solid lightgray;
 }
 
@@ -271,7 +293,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px;
     position: absolute;
     top: 0;
     left: 0;
@@ -459,12 +480,13 @@
 }
 
 .backgroundContainer {
-    background-color: rgba(89, 89, 89, 0.7);
+    background-color: rgba(89, 89, 89, 0.5);
+    z-index: 100;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 .customModal {

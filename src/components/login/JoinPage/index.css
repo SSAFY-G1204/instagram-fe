@@ -148,6 +148,11 @@
     background-color: #4CB5F9;
 }
 
+.joinButtonContainer:hover {
+    cursor: pointer;
+    background-color: #1877F2;
+}
+
 .joinText {
     color: white;
     font-size: 14px;

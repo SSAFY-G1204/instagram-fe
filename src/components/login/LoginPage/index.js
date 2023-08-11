@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import './index.css';
 
 export default function LoginPage() {
+  const navigate = useNavigate();
+
   return (
     <div className="loginPageContainer">
       {/* 내용 부분 */}
@@ -40,7 +43,7 @@ export default function LoginPage() {
                   placeholder="비밀번호"
                 />
               </div>
-              <div className="loginLoginButtonContainer">
+              <div className="loginLoginButtonContainer" onClick={() => navigate("/")}>
                 <span className="loginLoginText">로그인</span>
               </div>
               <div className="orContainer">
@@ -70,12 +73,13 @@ export default function LoginPage() {
             <div className="instagramContainer2">
               <div className="instagramSubContainer2">
                 <span className="noAccountText">계정이 없으신가요?</span>
-                <a
+                <span
                   className="loginJoinText"
                   href="https://www.instagram.com/accounts/emailsignup/"
+                  onClick={() => navigate('/join')}
                 >
                   가입하기
-                </a>
+                </span>
               </div>
             </div>
             <div className="instagramContainer3">

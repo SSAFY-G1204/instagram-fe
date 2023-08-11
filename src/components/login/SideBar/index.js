@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import './index.css';
 
 import {GoHome} from 'react-icons/go';
@@ -8,19 +9,25 @@ import {FiPlusSquare} from 'react-icons/fi';
 import {RxHamburgerMenu} from 'react-icons/rx';
 
 export default function SideBar() {
+  const navigate = useNavigate();
+
+  const newPosterPageReload = () => {
+    window.location.replace('/newposter');
+  }
+
   return (
     <div className="sideBarContainer">
       <div>
-        <div className="logoTabContainer">
+        <div className="logoTabContainer" onClick={() => navigate("/")}>
           <img
             alt="logo"
             className="logoImage"
-            src={require("../../images/img_logo.png")}
+            src={require("../images/img_logo.png")}
           />
         </div>
 
         <div className="tabContainer">
-          <div className="homeTabContainer">
+          <div className="homeTabContainer" onClick={() => navigate("/")}>
             <GoHome className="homeIcon" />
             <span className="homeText">홈</span>
           </div>
@@ -30,7 +37,10 @@ export default function SideBar() {
             <span className="searchText">검색</span>
           </div>
 
-          <div className="questTabContainer">
+          <div
+            className="questTabContainer"
+            onClick={() => navigate("/explore")}
+          >
             <svg
               className="questIcon"
               aria-label="탐색 탭"
@@ -68,7 +78,7 @@ export default function SideBar() {
             <span className="questText">탐색 탭</span>
           </div>
 
-          <div className="reelsTabContainer">
+          <div className="reelsTabContainer" onClick={() => navigate("/reels")}>
             <svg
               className="reelsIcon"
               aria-label="릴스"
@@ -166,27 +176,31 @@ export default function SideBar() {
             <span className="alertText">알림</span>
           </div>
 
-          <div className="makeTabContainer">
+          <div
+            className="makeTabContainer"
+            onClick={() => newPosterPageReload()}
+          >
             <FiPlusSquare className="makeIcon" />
             <span className="makeText">만들기</span>
           </div>
 
-          <div className="profileTabContainer">
+          <div
+            className="profileTabContainer"
+            onClick={() => navigate("/profile")}
+          >
             <img
               alt="make"
               className="profileIcon"
-              src={require("../../images/ic_profile.png")}
+              src={require("../images/ic_profile.png")}
             />
             <span className="profileText">프로필</span>
           </div>
         </div>
       </div>
 
-      <div>
-        <div className="showMoreContainer">
-          <RxHamburgerMenu className="showMoreIcon" />
-          <span className="showMoreText">더 보기</span>
-        </div>
+      <div className="showMoreContainer">
+        <RxHamburgerMenu className="showMoreIcon" />
+        <span className="showMoreText">더 보기</span>
       </div>
     </div>
   );

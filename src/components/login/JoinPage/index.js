@@ -1,7 +1,11 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
+
 import './index.css';
 
 export default function JoinPage() {
+  const navigate = useNavigate();
+
   return (
     <div className="joinPageContainer">
       {/* 내용 부분 */}
@@ -72,7 +76,7 @@ export default function JoinPage() {
                 </span>
                 <a className='moreText' href='https://www.facebook.com/help/instagram/261704639352628'>더 알아보기</a>
               </div>
-              <div className="joinButtonContainer">
+              <div className="joinButtonContainer" onClick={() => navigate('/login')}>
                 <span className="joinText">가입</span>
               </div>
             </div>

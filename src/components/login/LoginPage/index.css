@@ -72,6 +72,7 @@
     border-radius: 8px;
     margin: 10px 0;
     background-color: #4CB5F9;
+    cursor: pointer;
 }
 
 .loginLoginText {
@@ -159,6 +160,7 @@
     font-size: 14px;
     font-weight: 600;
     color: rgb(0, 149, 246);
+    cursor: pointer;
 }
 
 .instagramContainer3 {
