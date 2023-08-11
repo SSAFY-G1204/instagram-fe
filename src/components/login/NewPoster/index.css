@@ -12,14 +12,13 @@
 }
 
 .newPosterContainer {
-    height: 100vh;
     position: absolute;
     top: 0px;
     left: 0px;
     bottom: 0px;
     right: 0px;
     background-color: rgb(89, 89, 89, 0.5);
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .newPosterTopContainer {
@@ -436,14 +435,6 @@
     font-weight: 400;
 }
 
-.newPosterBottomContainer {
-    height: 60px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 .toggleButtonContainer {
     position: relative;
     margin-top: 8rem;
@@ -480,7 +471,7 @@
 }
 
 .backgroundContainer {
-    background-color: rgba(89, 89, 89, 0.5);
+    background-color: rgba(89, 89, 89, 30.5);
     z-index: 100;
     position: fixed;
     top: 0px;
@@ -512,4 +503,56 @@
     background-color: white;
     justify-content: center;
     overflow: auto;
+}
+
+.closeCheckNewPosterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(89, 89, 89, 0.7);
+    z-index: 9999;
+}
+
+.closeCheckNewPosterModal {
+    width: 400px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.closeCheckNewPosterDescription {
+    padding: 24px;
+    text-align: center;
+}
+
+.closeCheckNewPosterDescription1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.closeCheckNewPosterDescription2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(115, 115, 115);
+}
+
+.deleteNewPosterContainer, .cancelNewPosterContainer {
+    cursor: pointer;
+    border-top: 1px solid lightgray;
+    padding: 16px;
+    text-align: center;
+}
+
+.deleteNewPosterText, .cancelNewPosterText {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.deleteNewPosterText {
+    color: rgb(237, 73, 86);
 }
