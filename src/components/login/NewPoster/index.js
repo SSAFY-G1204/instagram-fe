@@ -23,6 +23,7 @@ export default function NewPoster() {
   const [selectedFilterTab, setSelectedFilterTab] = useState(1);
   const [isModalOpen, setIsModalOpen] = useState(true);
   const [isCloseNewPosterModal, setIsCloseNewPosterModal] = useState(false);
+  const [selectedFilterTabDataId, setSelectedFilterTabDataId] = useState(9);
 
   const editGbnValue = [
     {
@@ -91,6 +92,10 @@ export default function NewPoster() {
       setEditStatus('filter');
   }
 
+  const clickFilterTabData = (id) => {
+    setSelectedFilterTabDataId(id);
+  }
+
   const changeAccessStatus = () => {
     setShowAccess(!showAccess);
   }
@@ -148,7 +153,10 @@ export default function NewPoster() {
           <div className="newPosterContainer">
             {/* 상단 */}
             <div className="newPosterTopContainer">
-              <RiCloseFill className="closeIcon" onClick={() => closeModalCheck()} />
+              <RiCloseFill
+                className="closeIcon"
+                onClick={() => closeModalCheck()}
+              />
             </div>
 
             {/* 내용 부분 */}
@@ -284,14 +292,29 @@ export default function NewPoster() {
                               {editStatus === "filter" ? (
                                 <div className="editContentsFilter">
                                   {filterTabData.map((data) => (
-                                    <div className="editContentsFilterContainer">
+                                    <div
+                                      className="editContentsFilterContainer"
+                                      onClick={() =>
+                                        clickFilterTabData(data.id)
+                                      }
+                                    >
                                       <img
                                         id={`${data.id}`}
-                                        className="editContentsFilterImage"
+                                        className={`editContentsFilterImage ${
+                                          data.id === selectedFilterTabDataId
+                                            ? "active"
+                                            : ""
+                                        }`}
                                         alt={`${data.name}`}
                                         src={require("../images/ic_filter.jpg")}
                                       />
-                                      <span className="editContentsFilterText">{`${data.name}`}</span>
+                                      <span
+                                        className={`editContentsFilterText ${
+                                          data.id === selectedFilterTabDataId
+                                            ? "active"
+                                            : ""
+                                        }`}
+                                      >{`${data.name}`}</span>
                                     </div>
                                   ))}
                                 </div>

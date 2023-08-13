@@ -227,10 +227,19 @@
     cursor: pointer;
 }
 
+.editContentsFilterImage.active {
+    border: 2px solid #0798F6;
+}
+
 .editContentsFilterText {
     font-size: 14px;
     font-weight: 400;
     color: rgb(115, 115, 115);
+}
+
+.editContentsFilterText.active {
+    color: #0798F6;
+    font-weight: 600;
 }
 
 .newPosterContents {
