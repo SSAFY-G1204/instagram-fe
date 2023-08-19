@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
-import Modal from "react-modal";
 import './index.css';
 import filterTabData from './FilterTabData';
 import SideBar from '../SideBar/index';
+import SliderComponent from './SliderComponent';
 
-import {RiCloseFill} from 'react-icons/ri';
+import {RiCloseFill, RiH3} from 'react-icons/ri';
 import {BsArrowLeft} from 'react-icons/bs';
 import {GoLocation} from 'react-icons/go';
 import {SlArrowUp, SlArrowDown} from 'react-icons/sl';
-import {PiSmileyThin} from 'react-icons/pi';
+import {PiSmileyThin, PiVaultDuotone} from 'react-icons/pi';
 import {BsToggleOn, BsToggleOff} from 'react-icons/bs';
 
 export default function NewPoster() {
@@ -84,12 +84,14 @@ export default function NewPoster() {
   }
 
   const clickEditGbnTab = (id) => {
-    setSelectedFilterTab(id);
+    if(selectedFilterTab !== id) {
+      setSelectedFilterTab(id);
 
-    if(editStatus === 'filter')
-      setEditStatus('adjust');
-    else
-      setEditStatus('filter');
+      if(editStatus === 'filter')
+        setEditStatus('adjust');
+      else
+        setEditStatus("filter");
+    }
   }
 
   const clickFilterTabData = (id) => {
@@ -158,7 +160,6 @@ export default function NewPoster() {
                 onClick={() => closeModalCheck()}
               />
             </div>
-
             {/* 내용 부분 */}
             <div className="newPosterMainContainer">
               {!isShowNewPoster ? (
@@ -320,11 +321,48 @@ export default function NewPoster() {
                                 </div>
                               ) : (
                                 <div className="editContentsAdjust">
-                                  <h1>안녕</h1>
-                                  <h1>안녕</h1>
-                                  <h1>안녕</h1>
-                                  <h1>안녕</h1>
-                                  <h1>안녕</h1>
+                                  <SliderComponent
+                                    title="밝기"
+                                    isReset={true}
+                                    value={0}
+                                    min={0}
+                                    max={100}
+                                  />
+                                  <SliderComponent
+                                    title="대비"
+                                    isReset={true}
+                                    value={0}
+                                    min={0}
+                                    max={100}
+                                  />
+                                  <SliderComponent
+                                    title="흐리게"
+                                    isReset={true}
+                                    value={0}
+                                    min={0}
+                                    max={100}
+                                  />
+                                  <SliderComponent
+                                    title="채도"
+                                    isReset={true}
+                                    value={0}
+                                    min={0}
+                                    max={100}
+                                  />
+                                  <SliderComponent
+                                    title="온도"
+                                    isReset={true}
+                                    value={0}
+                                    min={0}
+                                    max={100}
+                                  />
+                                  <SliderComponent
+                                    title="배경 흐리게"
+                                    isReset={true}
+                                    value={0}
+                                    min={0}
+                                    max={100}
+                                  />
                                 </div>
                               )}
                             </div>
