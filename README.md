@@ -2,32 +2,35 @@
  
 ## 1. 프로젝트 설명
  구름톤 트레이닝 과정에서 진행한 팀별 인스타그램 클론 코딩입니다. 서버를 제외하고 react를 이용해 프론트단 클론 코딩을 진행하였습니다.
+<br/><br/>
 
 
 ## 2. 전체 화면 구성
-
+<img width="1000" alt="전체 화면 구성" src="https://github.com/handseokjin/goorm-instagram-clone/assets/32458465/a8bab4f4-dcfe-42e9-b9c4-94afd9d17d35">
+<br/><br/>
 
 
 ## 3. 담당 부분
  - 로그인
  - 회원가입
  - 새 게시물 만들기
+<img width="1000" alt="로그인 및 회원가입" src="https://github.com/handseokjin/goorm-instagram-clone/assets/32458465/9554a971-b84d-4577-b822-efb73918d9cd">
+<img width="1000" alt="만들기 탭 흐름도" src="https://github.com/handseokjin/goorm-instagram-clone/assets/32458465/e84d50c4-c39f-42cd-aee7-4b58fe30fc27">
+<br/><br/>
 
 
-
-## 3. 기술적 경험
+## 4. 기술적 경험
  - 사용되는 메모리 자원의 감소 등을 위해 `함수형 컴포넌트` 기반의 리액트 개발
  - 코드의 간결성 및 가독성을 위해 useState, useEffect 등과 같은 `리액트 훅`을 사용
  - 좀 더 자연스러운 UX를 위해 `React Router` 사용
  - 팀원들과 함께 github를 통해 협업하여 진행
+<br/><br/>
 
 
-## 4. 테크 스택
+## 5. 테크 스택
  - FrontEnd : React, VSCode
  - Version Control : Github
-
-
-## 5. 인프라 구조
+<br/><br/>
 
 
 ## 6. 회고
