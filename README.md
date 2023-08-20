@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# [토이 프로젝트] 인스타그램 클론코딩
+ 
+## 1. 프로젝트 설명
+ 구름톤 트레이닝 과정에서 진행한 팀별 인스타그램 클론 코딩입니다. 서버를 제외하고 react를 이용해 프론트단 클론 코딩을 진행하였습니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 2. 전체 화면 구성
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 3. 담당 부분
+ - 로그인
+ - 회원가입
+ - 새 게시물 만들기
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 3. 기술적 경험
+ - 사용되는 메모리 자원의 감소 등을 위해 `함수형 컴포넌트` 기반의 리액트 개발
+ - 코드의 간결성 및 가독성을 위해 useState, useEffect 등과 같은 `리액트 훅`을 사용
+ - 좀 더 자연스러운 UX를 위해 `React Router` 사용
+ - 팀원들과 함께 github를 통해 협업하여 진행
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 4. 테크 스택
+ - FrontEnd : React, VSCode
+ - Version Control : Github
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 5. 인프라 구조
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 6. 회고
+ 강의를 통해 react를 배우고 이를 활용해 좀 더 심화된 클론코딩 프로젝트를 해 보며 리액트 전반에 더욱 익숙해질 수 있었습니다.
+ 비록 자바 백엔드 위주로 공부를 하고 있지만 별도의 공부를 통해 프론트엔드도 할 수 있다는 경험을 할 수 있었던 것 같습니다.
+ 또한 팀원들과 함께 github를 통해 branch를 만들고 merge를 하는 등의 협업 경험도 좋은 경험이었습니다.
