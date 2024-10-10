@@ -35,7 +35,7 @@ export default function Rightbar() {
           <Link to = 'profile'>
             <a href ='/'target="_blank">oo33</a>
             </Link>
-            <span>최지현</span>
+            <span>박해인</span>
           </div>
           <Link to = 'login'>
           <button className='right-user-button'>전환</button>

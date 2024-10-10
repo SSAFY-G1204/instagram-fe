@@ -91,10 +91,6 @@ export default function Post() {
     </div>
     <div className='division__line'></div>
     
-
-
-
-
     <div className='post_header'>
         <div className='post_profile'>
         <a href='/' target='_blank' className='post__avatar'>

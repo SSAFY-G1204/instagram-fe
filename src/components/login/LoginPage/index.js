@@ -77,14 +77,41 @@ export default function LoginPage() {
               <div className="loginFacebookLoginContainer">
                 <img
                   className="loginFacebookLoginIcon"
-                  src={require("../images/ic_facebook.png")}
-                  alt="페이스북 아이콘"
+                  src={require("../images/google_icon.png")}
+                  alt="구글 아이콘"
                 />
                 <a
                   href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26locale%3Dko_KR%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26response_type%3Dcode%252Cgranted_scopes%26scope%3Demail%26state%3D%257B%2522fbLoginKey%2522%253A%2522xfvzml112wvbs19syplpz1pb9tpsg5kq49w4gmu5svik1fz92p3%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Daf1721a4-bffc-4a97-b86b-fe0549987a8a%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522xfvzml112wvbs19syplpz1pb9tpsg5kq49w4gmu5svik1fz92p3%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0"
                   className="loginFackbookLoginText"
                 >
-                  Facebook으로 로그인
+                  Google로 로그인
+                </a>
+              </div>
+              <div className="loginFacebookLoginContainer">
+                <img
+                  className="loginFacebookLoginIcon"
+                  src={require("../images/naver_square.png")}
+                  alt="네이버 아이콘"
+                />
+                <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico"></link>
+                <a
+                  href="522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Daf1721a4-bffc-4a97-b86b-fe0549987a8a%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522xfvzml112wvbs19syplpz1pb9tpsg5kq49w4gmu5svik1fz92p3%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0"
+                  className="loginFackbookLoginText"
+                >
+                  NAVER로 로그인
+                </a>
+              </div>
+              <div className="loginFacebookLoginContainer">
+                <img
+                  className="loginFacebookLoginIcon"
+                  src={require("../images/kakao_login_small.png")}
+                  alt="카카오 아이콘"
+                />
+                <a
+                  href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26locale%3Dko_KR%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26response_type%3Dcode%252Cgranted_scopes%26scope%3Demail%26state%3D%257B%2522fbLoginKey%2522%253A%2522xfvzml112wvbs19syplpz1pb9tpsg5kq49w4gmu5svik1fz92p3%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Daf1721a4-bffc-4a97-b86b-fe0549987a8a%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522xfvzml112wvbs19syplpz1pb9tpsg5kq49w4gmu5svik1fz92p3%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0"
+                  className="loginFackbookLoginText"
+                >
+                  KAKAO로 로그인
                 </a>
               </div>
               {
